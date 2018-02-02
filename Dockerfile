@@ -2,7 +2,7 @@ FROM ligo/base:stretch
 
 LABEL name="LALSuite Development - Debian Stretch" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20171212" \
+      date="20180201" \
       support="Best Effort"
 
 # FIXME: this should use the lscsoft-lalsuite-dev meta-package but
@@ -35,6 +35,7 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       python-h5py \
       python-healpy \
       python-numpy \
+      python-reproject \
       python-scipy \
       python-shapely \
       python-six \
