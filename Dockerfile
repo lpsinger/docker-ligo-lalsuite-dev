@@ -2,7 +2,7 @@ FROM ligo/base:stretch
 
 LABEL name="LALSuite Development - Debian Stretch" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20180201" \
+      date="20180504" \
       support="Best Effort"
 
 # FIXME: this should use the lscsoft-lalsuite-dev meta-package but
@@ -12,7 +12,9 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       bc \
       build-essential \
       ccache \
+      devscripts \
       doxygen \
+      fakeroot \
       git \
       git-lfs \
       help2man \
@@ -22,7 +24,7 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       libfftw3-dev \
       libframe-dev \
       libglib2.0-dev \
-      libgsl0-dev \
+      libgsl-dev \
       libhdf5-dev \
       libmetaio-dev \
       liboctave-dev \
@@ -30,15 +32,19 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       libtool \
       libxml2-dev \
       pkg-config \
+      python-all-dev \
       python-dev \
       python-glue \
       python-h5py \
       python-healpy \
+      python-ligo-gracedb \
       python-numpy \
       python-reproject \
       python-scipy \
+      python-seaborn \
       python-shapely \
       python-six \
+      python3-all-dev \
       python3-dev \
       python3-glue \
       python3-h5py \
@@ -47,6 +53,7 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       python3-scipy \
       python3-shapely \
       python3-six \
+      swig \
       swig3.0 \
       texlive
 
