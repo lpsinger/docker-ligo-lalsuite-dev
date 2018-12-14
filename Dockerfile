@@ -2,7 +2,7 @@ FROM ligo/base:stretch
 
 LABEL name="LALSuite Development - Debian Stretch" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20180604" \
+      date="20181213" \
       support="Best Effort"
 
 # FIXME: this should use the lscsoft-lalsuite-dev meta-package but
@@ -35,6 +35,7 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       python-all-dev \
       python-dev \
       python-glue \
+      python-gwpy \
       python-h5py \
       python-healpy \
       python-ligo-gracedb \
@@ -48,6 +49,7 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       python3-all-dev \
       python3-dev \
       python3-glue \
+      python3-gwpy \
       python3-h5py \
       python3-healpy \
       python3-ligo-segments \
