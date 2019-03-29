@@ -9,6 +9,7 @@ LABEL name="LALSuite Development - Debian Stretch" \
 RUN apt-get update && apt-get --assume-yes install \
       build-essential \
       ccache \
+      devscripts \
       git-lfs \
       lscsoft-lalsuite-dev \
       python-ligo-gracedb \
